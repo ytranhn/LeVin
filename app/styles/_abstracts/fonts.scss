@@ -1,11 +1,10 @@
 @font-face {
-    font-family: 'Arrus';
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    src: local('Arrus'),
-        url('../fonts/Arrus.woff2') format('woff2'),
-        url('../fonts/Arrus.woff') format('woff');
+	font-family: 'Arrus';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local('Arrus'), url('../fonts/Arrus.woff2') format('woff2'),
+		url('../fonts/Arrus.woff') format('woff');
 }
 
 @font-face {
