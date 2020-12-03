@@ -1,0 +1,23 @@
+.contact__map {
+	height: 350px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact__information {
+	.information__item {
+		display: flex;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+		> span {
+			margin-top: 3px;
+		}
+		> p {
+			margin-left: 10px;
+			font-size: 1.6rem;
+		}
+	}
+}

@@ -1,1 +1,13 @@
-p acac ac a ca c 
+.indexBanner
+	.swiper-container
+		.swiper-wrapper
+			-for(let i=0; i<4; i++)
+				.swiper-slide
+					.banner__img.slide-bg-image(style="background-image: url(./images/banner-1.jpg)")
+					.banner__content.text-center
+						h2.banner__title.fw-400(data-swiper-parallax="300") Amet minim mollit non deserunt ullamco est.
+						p.banner__subTitle(data-swiper-parallax="400")  Amet minim mollit non deserunt ullamco est sit aliqua dolor dossa.
+						a.btn.btn--secondary--outline.btn-transparent(data-swiper-parallax="500" href="service.html") Xem chi tiết dịch vụ chúng tôi
+						p.banner__description(data-swiper-parallax="400")  “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.”
+						p.banner__author(data-swiper-parallax="500")  - Guy Hawkins -
+		.swiper-pagination.swiper-pagination--custom

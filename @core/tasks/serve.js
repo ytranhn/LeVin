@@ -110,5 +110,6 @@ export const serve = () => {
 		parallel(jsCore, cssCore, copyFonts),
 	);
 
+	watch(['_dist/**.html']).on('change', bSync.reload);
 	watch(['_dist/**/**.**']).on('change', bSync.reload);
 };

@@ -3,22 +3,233 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+		<link rel="preconnect" href="./css/core.min.css"/>
+		<link rel="preconnect" href="./css/main.min.css"/>
+		<link rel="preconnect" href="./js/main.min.js"/>
+		<link rel="preconnect" href="./js/main.min.js"/>
 		<link rel="preconnect" href="https://fonts.gstatic.com"/>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
 		<link rel="stylesheet" href="./css/core.min.css"/>
 		<link rel="stylesheet" href="./css/main.min.css"/>
-		<title></title>
+		<title>Trang chủ</title>
 	</head>
-	<body class="body-style-1">
-		<header>
-			<h1>This is header</h1>
+	<body class="index-body">
+		<header class="header">
+			<div class="header__logo text-center"><a href="/"><img src="./images/logo.svg" alt="logo"/>
+					<h1>Le Vin Decor</h1></a></div>
+			<div class="header__nav">
+				<div class="nav__item"><a class="nav__link" href="/">Trang chủ</a></div>
+				<div class="nav__item"><a class="nav__link" href="about-us.html">Giới thiệu</a></div>
+				<div class="nav__item"><a class="nav__link" href="service.html">Dịch vụ</a></div>
+				<div class="nav__item"><a class="nav__link" href="project.html">Dự án</a></div>
+				<div class="nav__item"><a class="nav__link" href="news.html">Tin tức</a></div>
+				<div class="nav__item"><a class="nav__link" href="contact.html">Liên hệ</a></div>
+			</div>
+			<div class="header__contact">
+				<p class="contact__socials"><span>Socials: </span><a class="social__item" href="#"><span class="fab fa-facebook-f"></span></a><a class="social__item" href="#"><span class="fab fa-twitter"></span></a><a class="social__item" href="#"><span class="fab fa-youtube"></span></a></p>
+				<p class="contact__item"><span class="fas fa-map-marker-alt contact__icon"></span><span class="contact__text">Levin Building</span></p>
+				<p class="contact__item"><span class="fas fa-phone-alt contact__icon"></span><a class="contact__text" href="tel:0902851929">090 2851 929</a></p>
+				<p class="contact__item"><span class="fas fa-envelope contact__icon"></span><a class="contact__text" href="mailto:info@levindecor.com">info@levindecor.com</a></p>
+			</div>
 		</header>
-		<main class="main-style-1">
-			<p>This is index page</p>
+		<main class="index-main">
+			<div class="indexBanner">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="banner__img slide-bg-image" style="background-image: url(./images/banner-1.jpg)"></div>
+							<div class="banner__content text-center">
+								<h2 class="banner__title fw-400" data-swiper-parallax="300">Amet minim mollit non deserunt ullamco est.</h2>
+								<p class="banner__subTitle" data-swiper-parallax="400"> Amet minim mollit non deserunt ullamco est sit aliqua dolor dossa.</p><a class="btn btn--secondary--outline btn-transparent" data-swiper-parallax="500" href="service.html">Xem chi tiết dịch vụ chúng tôi</a>
+								<p class="banner__description" data-swiper-parallax="400"> “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.”</p>
+								<p class="banner__author" data-swiper-parallax="500"> - Guy Hawkins -</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="banner__img slide-bg-image" style="background-image: url(./images/banner-1.jpg)"></div>
+							<div class="banner__content text-center">
+								<h2 class="banner__title fw-400" data-swiper-parallax="300">Amet minim mollit non deserunt ullamco est.</h2>
+								<p class="banner__subTitle" data-swiper-parallax="400"> Amet minim mollit non deserunt ullamco est sit aliqua dolor dossa.</p><a class="btn btn--secondary--outline btn-transparent" data-swiper-parallax="500" href="service.html">Xem chi tiết dịch vụ chúng tôi</a>
+								<p class="banner__description" data-swiper-parallax="400"> “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.”</p>
+								<p class="banner__author" data-swiper-parallax="500"> - Guy Hawkins -</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="banner__img slide-bg-image" style="background-image: url(./images/banner-1.jpg)"></div>
+							<div class="banner__content text-center">
+								<h2 class="banner__title fw-400" data-swiper-parallax="300">Amet minim mollit non deserunt ullamco est.</h2>
+								<p class="banner__subTitle" data-swiper-parallax="400"> Amet minim mollit non deserunt ullamco est sit aliqua dolor dossa.</p><a class="btn btn--secondary--outline btn-transparent" data-swiper-parallax="500" href="service.html">Xem chi tiết dịch vụ chúng tôi</a>
+								<p class="banner__description" data-swiper-parallax="400"> “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.”</p>
+								<p class="banner__author" data-swiper-parallax="500"> - Guy Hawkins -</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="banner__img slide-bg-image" style="background-image: url(./images/banner-1.jpg)"></div>
+							<div class="banner__content text-center">
+								<h2 class="banner__title fw-400" data-swiper-parallax="300">Amet minim mollit non deserunt ullamco est.</h2>
+								<p class="banner__subTitle" data-swiper-parallax="400"> Amet minim mollit non deserunt ullamco est sit aliqua dolor dossa.</p><a class="btn btn--secondary--outline btn-transparent" data-swiper-parallax="500" href="service.html">Xem chi tiết dịch vụ chúng tôi</a>
+								<p class="banner__description" data-swiper-parallax="400"> “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.”</p>
+								<p class="banner__author" data-swiper-parallax="500"> - Guy Hawkins -</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination swiper-pagination--custom"></div>
+				</div>
+			</div>
+			<div class="indexIntroduce pd-section">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-6">
+							<div class="indexIntroduce__icon text-center"><img class="lazyload blur-up" data-src="./images/introduce-icon-1.svg"/></div>
+							<div class="indexIntroduce__content">
+								<h2 class="indexIntroduce__title section__title underline underline--main underline--200 fw-400">Công ty thiết kế nội thất văn phòng hàng đầu Việt Nam</h2>
+								<p class="indexIntroduce__description fs--18"><b>LE VIN Decor </b>là một trung những công ty hàng đầu trong nước trong lĩnh vực thiết kế, sản xuất cung cấp và lắp đặt đồ nội thất cao cấp cho các dự án văn phòng.</p>
+							</div>
+							<div class="indexIntroduce__buttons"><a class="btn btn--30--outline fw-700" href="#">Xem thêm</a></div>
+						</div>
+						<div class="col"></div>
+						<div class="col-md-5">
+							<div class="indexIntroduce__img"><img class="lazyload blur-up" data-src="./images/introduce-1.jpg"/></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="indexVideo pd-section">
+				<div class="container">
+					<div class="row--float clearfix">
+						<div class="indexVideo__img"><a href="https://www.youtube.com/watch?v=zRdHnseM0PE" data-fancybox="index-video"><img class="lazyload blur-up" data-src="./images/video-1.jpg"/></a></div>
+						<div class="indexVideo__content">
+							<h2 class="indexVideo__title section__title fw-400">Cùng kiến tạo không gian hoàn hảo</h2>
+							<p class="indexVideo__description fw-300">Không gian làm việc hiện nay là bơi hoạt đông kinh doanh quan trọng diễn ra, vì thể kiến tạo một không gian làm việc mới cũng là cơ hội để các nhà quản trị suy nghĩ về việc tạo ra những lợi thế cạnh tranh cho chính doanh nghiệp mình.</p>
+							<p class="indexVideo__description fw-700">Đến với Lê Vin khách hàng sẽ cảm nhận sự khác biệt về cách phục vụ, tính chuyên nghiệp cao, thân thiện và nhiệt tình với phương châm: “BIẾN GIẤC MƠ THÀNH HIỆN THỰC”</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="indexHotService pt-section">
+				<div class="container">
+					<div class="section__blockTitle">
+						<h2 class="section__title fw-400 underline underline--80 underline--black">Dự án nổi bật</h2>
+					</div>
+				</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><a class="indexHotServiceItem" href="#">
+								<div class="indexHotServiceItem__img"><img class="object-cover" src="./images/service-1.jpg"/></div>
+								<div class="indexHotServiceItem__content">
+									<h4 class="text-uppercase text-center">VĂN PHÒNG CITEK</h4>
+								</div>
+								<div class="indexHotServiceItem__buttons">
+									<div class="btn btn--70 fw-700">Xem thêm</div>
+								</div></a></div>
+						<div class="swiper-slide"><a class="indexHotServiceItem" href="#">
+								<div class="indexHotServiceItem__img"><img class="object-cover" src="./images/service-2.jpg"/></div>
+								<div class="indexHotServiceItem__content">
+									<h4 class="text-uppercase text-center">Văn phòng</h4>
+								</div>
+								<div class="indexHotServiceItem__buttons">
+									<div class="btn btn--70 fw-700">Xem thêm</div>
+								</div></a></div>
+						<div class="swiper-slide"><a class="indexHotServiceItem" href="#">
+								<div class="indexHotServiceItem__img"><img class="object-cover" src="./images/service-3.jpg"/></div>
+								<div class="indexHotServiceItem__content">
+									<h4 class="text-uppercase text-center">VĂN PHÒNG IOM</h4>
+								</div>
+								<div class="indexHotServiceItem__buttons">
+									<div class="btn btn--70 fw-700">Xem thêm</div>
+								</div></a></div>
+						<div class="swiper-slide"><a class="indexHotServiceItem" href="#">
+								<div class="indexHotServiceItem__img"><img class="object-cover" src="./images/service-4.jpg"/></div>
+								<div class="indexHotServiceItem__content">
+									<h4 class="text-uppercase text-center">PHÒNG PANTRY</h4>
+								</div>
+								<div class="indexHotServiceItem__buttons">
+									<div class="btn btn--70 fw-700">Xem thêm</div>
+								</div></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="indexCustomer pd-section">
+				<div class="container">
+					<div class="section__blockTitle">
+						<h2 class="indexCustomer__title">1000+</h2>
+						<p class="indexCustomer__subTitle">KHÁCH HÀNG ĐÃ TIN TƯỞNG LEVIN DECOR</p>
+					</div>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><a class="fullsize" href="#"><img class="object-cover" src="./images/service-1.jpg"/></a></div>
+							<div class="swiper-slide"><a class="fullsize" href="#"><img class="object-cover" src="./images/service-1.jpg"/></a></div>
+							<div class="swiper-slide"><a class="fullsize" href="#"><img class="object-cover" src="./images/service-1.jpg"/></a></div>
+							<div class="swiper-slide"><a class="fullsize" href="#"><img class="object-cover" src="./images/service-1.jpg"/></a></div>
+							<div class="swiper-slide"><a class="fullsize" href="#"><img class="object-cover" src="./images/service-1.jpg"/></a></div>
+							<div class="swiper-slide"><a class="fullsize" href="#"><img class="object-cover" src="./images/service-1.jpg"/></a></div>
+							<div class="swiper-slide"><a class="fullsize" href="#"><img class="object-cover" src="./images/service-1.jpg"/></a></div>
+							<div class="swiper-slide"><a class="fullsize" href="#"><img class="object-cover" src="./images/service-1.jpg"/></a></div>
+							<div class="swiper-slide"><a class="fullsize" href="#"><img class="object-cover" src="./images/service-1.jpg"/></a></div>
+							<div class="swiper-slide"><a class="fullsize" href="#"><img class="object-cover" src="./images/service-1.jpg"/></a></div>
+							<div class="swiper-slide"><a class="fullsize" href="#"><img class="object-cover" src="./images/service-1.jpg"/></a></div>
+							<div class="swiper-slide"><a class="fullsize" href="#"><img class="object-cover" src="./images/service-1.jpg"/></a></div>
+							<div class="swiper-slide"><a class="fullsize" href="#"><img class="object-cover" src="./images/service-1.jpg"/></a></div>
+						</div>
+						<div class="swiper-pagination swiper-pagination--custom"></div>
+					</div>
+				</div>
+			</div>
+			<div class="indexNews pd-section">
+				<div class="container">
+					<div class="section__blockTitle justify-content-start">
+						<h2 class="section__title underline underline--black underline--80 fw-400 text-uppercase">Tin tức</h2>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-xl-3"><a class="newsItem" href="news-detail.html">
+								<div class="newsItem__img"><img class="lazyload blur-up" data-src="./images/news.jpg"/></div>
+								<div class="newsItem__content">
+									<div class="newsItem__contentWrapper">
+										<h4 class="newsItem__title">Amet minim mollit non deserunt ullamco est sit aliqua dolor do resad...</h4>
+										<p class="newsItem__time"><span class="far fa-clock"></span>
+											<time>11/14/2020</time>
+										</p>
+										<p class="newsItem__viewmore text-right"><span>Xem thêm</span></p>
+									</div>
+								</div></a></div>
+						<div class="col-sm-6 col-xl-3"><a class="newsItem" href="news-detail.html">
+								<div class="newsItem__img"><img class="lazyload blur-up" data-src="./images/news.jpg"/></div>
+								<div class="newsItem__content">
+									<div class="newsItem__contentWrapper">
+										<h4 class="newsItem__title">Amet minim mollit non deserunt ullamco est sit aliqua dolor do resad...</h4>
+										<p class="newsItem__time"><span class="far fa-clock"></span>
+											<time>11/14/2020</time>
+										</p>
+										<p class="newsItem__viewmore text-right"><span>Xem thêm</span></p>
+									</div>
+								</div></a></div>
+						<div class="col-sm-6 col-xl-3"><a class="newsItem" href="news-detail.html">
+								<div class="newsItem__img"><img class="lazyload blur-up" data-src="./images/news.jpg"/></div>
+								<div class="newsItem__content">
+									<div class="newsItem__contentWrapper">
+										<h4 class="newsItem__title">Amet minim mollit non deserunt ullamco est sit aliqua dolor do resad...</h4>
+										<p class="newsItem__time"><span class="far fa-clock"></span>
+											<time>11/14/2020</time>
+										</p>
+										<p class="newsItem__viewmore text-right"><span>Xem thêm</span></p>
+									</div>
+								</div></a></div>
+						<div class="col-sm-6 col-xl-3"><a class="newsItem" href="news-detail.html">
+								<div class="newsItem__img"><img class="lazyload blur-up" data-src="./images/news.jpg"/></div>
+								<div class="newsItem__content">
+									<div class="newsItem__contentWrapper">
+										<h4 class="newsItem__title">Amet minim mollit non deserunt ullamco est sit aliqua dolor do resad...</h4>
+										<p class="newsItem__time"><span class="far fa-clock"></span>
+											<time>11/14/2020</time>
+										</p>
+										<p class="newsItem__viewmore text-right"><span>Xem thêm</span></p>
+									</div>
+								</div></a></div>
+					</div>
+				</div>
+			</div>
 		</main>
-		<footer>
-			<h1>This is footer</h1>
-		</footer>
+		<footer></footer>
 		<script src="./js/core.min.js"></script>
 		<script src="./js/main.min.js"></script>
 	</body>

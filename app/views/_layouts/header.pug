@@ -1,2 +1,36 @@
-header
-	h1 This is header
+header.header
+	.header__logo.text-center
+		a(href='/')
+			img(src="./images/logo.svg", alt="logo")
+			h1 Le Vin Decor
+	.header__nav
+		.nav__item
+			a.nav__link(href="/") Trang chủ
+		.nav__item
+			a.nav__link(href="about-us.html") Giới thiệu
+		.nav__item
+			a.nav__link(href="service.html") Dịch vụ
+		.nav__item
+			a.nav__link(href="project.html") Dự án
+		.nav__item
+			a.nav__link(href="news.html") Tin tức
+		.nav__item
+			a.nav__link(href="contact.html") Liên hệ
+	.header__contact
+		p.contact__socials
+			span Socials: 
+			a.social__item(href="#")
+				span.fab.fa-facebook-f
+			a.social__item(href="#")
+				span.fab.fa-twitter
+			a.social__item(href="#")
+				span.fab.fa-youtube
+		p.contact__item
+			span.fas.fa-map-marker-alt.contact__icon
+			span.contact__text Levin Building
+		p.contact__item
+			span.fas.fa-phone-alt.contact__icon
+			a.contact__text(href="tel:0902851929") 090 2851 929
+		p.contact__item
+			span.fas.fa-envelope.contact__icon
+			a.contact__text(href="mailto:info@levindecor.com") info@levindecor.com

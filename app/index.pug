@@ -1,8 +1,14 @@
 extends views/_layouts/layout
 
 block var
-	- bodyClass = "body-style-1"
-	- mainClass = "main-style-1"
+	- bodyClass = "index-body"
+	- mainClass = "index-main"
+	- title = "Trang chủ"
 
 block main
-	p This is index page
+	include views/index/i-1
+	include views/index/i-2
+	include views/index/i-3
+	include views/index/i-4
+	include views/index/i-5
+	include views/index/i-6

@@ -5,7 +5,7 @@ import cleanCss from 'gulp-clean-css';
 import Fiber from 'fibers';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
-import cssnano from 'cssnano';
+import cssSort from 'css-declaration-sorter';
 import rename from 'gulp-rename';
 import sourcemaps from 'gulp-sourcemaps';
 import gulpif from 'gulp-if';
@@ -26,35 +26,34 @@ export const cssTask = () => {
 			.pipe(gulpif(!isProduction(), sourcemaps.init()))
 			.pipe(
 				sass({
+					sync: true,
 					fiber: Fiber,
 				}).on('error', sass.logError),
 			)
 			.pipe(
-				cleanCss({
-					level: {
-						1: {
-							all: true,
-							normalizeUrls: false,
-							specialComments: false,
-						},
-						2: {
-							restructureRules: true,
-						},
-					},
-				}),
+				postcss([
+					autoprefixer({
+						cascade: false,
+					}),
+					cssSort({
+						order: 'smacss',
+					}),
+				]),
 			)
 			.pipe(
-				postcss([
-					autoprefixer({
-						cascade: false,
-					}),
-					cssnano(),
-				]),
-				postcss([
-					autoprefixer({
-						cascade: false,
-					}),
-				]),
+				cleanCss({
+					compatibility: 'ie9',
+					// level: {
+					// 	1: {
+					// 		all: true,
+					// 		normalizeUrls: false,
+					// 		specialComments: false,
+					// 	},
+					// 	2: {
+					// 		restructureRules: true,
+					// 	},
+					// },
+				}),
 			)
 			.pipe(
 				rename({

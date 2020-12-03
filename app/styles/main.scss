@@ -1,2 +1,25 @@
-@import '_abstracts/variables';
 @import '_abstracts/fonts';
+@import '_abstracts/variables';
+@import '_abstracts/functions';
+@import '_abstracts/mixins';
+
+@import '_globals/reset';
+@import '_globals/grid';
+@import '_globals/forms';
+@import '_globals/buttons';
+
+@import '_layouts/layout';
+@import '_layouts/header';
+@import '_layouts/footer';
+@import '_layouts/news';
+
+@import '_pages/index';
+@import '_pages/about-us';
+@import '_pages/service';
+@import '_pages/service-detail';
+@import '_pages/project';
+@import '_pages/project-detail';
+@import '_pages/news-detail';
+@import '_pages/contact';
+
+@import '_globals/utilities';
