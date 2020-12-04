@@ -1,0 +1,69 @@
+.projectDetailBanner
+	.projectDetailBanner__img.fullsize
+		img.lazyload.blur-up.object-cover(data-src="./images/banner-1.jpg")
+	.projectDetailBanner__content
+		h2.section__title.fw-400.underline.underline--80.text-uppercase Name Project
+		ul
+			li Thành Phố Hồ Chí Minh
+			li 1000m2
+.projectDetailVideo.pd-section
+	.container
+		.row.align-items-center
+			.col-lg-6
+				.projectDetailVideo__content.pd-section
+					h2.section__title.fw-400 Đem lại giải pháp tìm kiếm tối ưu cho khách hàng
+					h3 Công ty ABC
+					p Chúng tôi đã cố gắng tọa ra một không gian rất linh hoạt, có thể giải quyết bấn đề về mật độ người dùng. Với 250m2. Văn phòng này có thể phục vụ tối đa 80 người làm việc cùng 1 lúc
+					.row
+						.col
+							p
+								b Khu vực
+							p
+								span Truyền thông
+						.col
+							p
+								b Diện tích
+							p
+								span 25m2
+						.col
+							p
+								b Địa điểm
+							p
+								span Hà Nội
+			.col-lg-6
+				.projectDetailVideo__img.indexVideo__img
+					a(href="https://www.youtube.com/watch?v=zRdHnseM0PE" data-fancybox="project-video")
+						img.lazyload.blur-up(data-src="./images/video-1.jpg")
+.projectDetailVideo__album.pt-section
+	.container
+		.row
+			.col-lg-12.projectDetailVideo__big
+				a(href="./images/project-detail-1.jpg" data-fancybox="project-video")
+					img.lazyload.blur-up(src="./images/project-detail-1.jpg", alt="")
+			.col-lg-6.projectDetailVideo__small
+				a(href="./images/news.jpg" data-fancybox="project-video")
+					img.fullsize.lazyload.blur-up(src="./images/news.jpg", alt="")
+			.col-lg-6.projectDetailVideo__small
+				a(href="./images/news.jpg" data-fancybox="project-video")
+					img.fullsize.lazyload.blur-up(src="./images/news.jpg", alt="")
+			.d-none
+				a(href="./images/news.jpg" data-fancybox="project-video")
+					img.fullsize.lazyload.blur-up(src="./images/news.jpg", alt="")
+				a(href="./images/news.jpg" data-fancybox="project-video")
+					img.fullsize.lazyload.blur-up(src="./images/news.jpg", alt="")
+				a(href="./images/news.jpg" data-fancybox="project-video")
+					img.fullsize.lazyload.blur-up(src="./images/news.jpg", alt="")
+				a(href="./images/news.jpg" data-fancybox="project-video")
+					img.fullsize.lazyload.blur-up(src="./images/news.jpg", alt="")
+.aboutStaff.pd-section
+	.container
+		h2.section__title.text-uppercase.fw-400.underline.underline--80.underline--black Dự án nổi bật
+		.row
+			-for(let i = 0;i<3;i++)
+				.col-sm-6.col-xl-4
+					a(href='project-detail.html').projectItem
+						.projectItem__img
+							img.lazyload.blur-up(data-src="./images/news.jpg")
+						.projectItem__content
+							h4.projectItem__title= itemTitle
+							p.projectItem__description.fs--16.fw-300 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit perspiciatis tempore sequi eligendi minus saepe quod rem! Repellat quos, neque mollitia eum nihil dolores error rem sed illo earum dignissimos!

@@ -14,12 +14,27 @@
 		<title>Dự án chi tiết</title>
 	</head>
 	<body class="project-detail-body">
+		<div class="header--mobile mobile">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="header__logo text-center"><a href="/"><img src="./images/logo.svg" alt="logo"/>
+							<h1>Le Vin Decor</h1></a></div>
+					<div class="header__toggle"><span class="fal fa-bars"></span></div>
+				</div>
+			</div>
+		</div>
 		<header class="header">
 			<div class="header__logo text-center"><a href="/"><img src="./images/logo.svg" alt="logo"/>
 					<h1>Le Vin Decor</h1></a></div>
 			<div class="header__nav">
 				<div class="nav__item"><a class="nav__link" href="/">Trang chủ</a></div>
-				<div class="nav__item"><a class="nav__link" href="about-us.html">Giới thiệu</a></div>
+				<div class="nav__item nav__item--hasSub"><a class="nav__link" href="#"> <span>Giới thiệu</span><span class="fal fa-chevron-right"></span></a>
+					<div class="nav__sub">
+						<div class="nav__item"><a class="nav__link" href="about-us.html">Giới thiệu chung</a></div>
+						<div class="nav__item"><a class="nav__link" href="about-office.html">Khối văn phòng</a></div>
+						<div class="nav__item"><a class="nav__link" href="about-factory.html">Khối nhà máy</a></div>
+					</div>
+				</div>
 				<div class="nav__item"><a class="nav__link" href="service.html">Dịch vụ</a></div>
 				<div class="nav__item"><a class="nav__link" href="project.html">Dự án</a></div>
 				<div class="nav__item"><a class="nav__link" href="news.html">Tin tức</a></div>
@@ -33,6 +48,81 @@
 			</div>
 		</header>
 		<main class="project-detail-main">
+			<div class="projectDetailBanner">
+				<div class="projectDetailBanner__img fullsize"><img class="lazyload blur-up object-cover" data-src="./images/banner-1.jpg"/></div>
+				<div class="projectDetailBanner__content">
+					<h2 class="section__title fw-400 underline underline--80 text-uppercase">Name Project</h2>
+					<ul>
+						<li>Thành Phố Hồ Chí Minh</li>
+						<li>1000m2</li>
+					</ul>
+				</div>
+			</div>
+			<div class="projectDetailVideo pd-section">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6">
+							<div class="projectDetailVideo__content pd-section">
+								<h2 class="section__title fw-400">Đem lại giải pháp tìm kiếm tối ưu cho khách hàng</h2>
+								<h3>Công ty ABC</h3>
+								<p>Chúng tôi đã cố gắng tọa ra một không gian rất linh hoạt, có thể giải quyết bấn đề về mật độ người dùng. Với 250m2. Văn phòng này có thể phục vụ tối đa 80 người làm việc cùng 1 lúc</p>
+								<div class="row">
+									<div class="col">
+										<p><b>Khu vực</b></p>
+										<p><span>Truyền thông</span></p>
+									</div>
+									<div class="col">
+										<p><b>Diện tích</b></p>
+										<p><span>25m2</span></p>
+									</div>
+									<div class="col">
+										<p><b>Địa điểm</b></p>
+										<p><span>Hà Nội</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="projectDetailVideo__img indexVideo__img"><a href="https://www.youtube.com/watch?v=zRdHnseM0PE" data-fancybox="project-video"><img class="lazyload blur-up" data-src="./images/video-1.jpg"/></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="projectDetailVideo__album pt-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 projectDetailVideo__big"><a href="./images/project-detail-1.jpg" data-fancybox="project-video"><img class="lazyload blur-up" src="./images/project-detail-1.jpg" alt=""/></a></div>
+						<div class="col-lg-6 projectDetailVideo__small"><a href="./images/news.jpg" data-fancybox="project-video"><img class="fullsize lazyload blur-up" src="./images/news.jpg" alt=""/></a></div>
+						<div class="col-lg-6 projectDetailVideo__small"><a href="./images/news.jpg" data-fancybox="project-video"><img class="fullsize lazyload blur-up" src="./images/news.jpg" alt=""/></a></div>
+						<div class="d-none"><a href="./images/news.jpg" data-fancybox="project-video"><img class="fullsize lazyload blur-up" src="./images/news.jpg" alt=""/></a><a href="./images/news.jpg" data-fancybox="project-video"><img class="fullsize lazyload blur-up" src="./images/news.jpg" alt=""/></a><a href="./images/news.jpg" data-fancybox="project-video"><img class="fullsize lazyload blur-up" src="./images/news.jpg" alt=""/></a><a href="./images/news.jpg" data-fancybox="project-video"><img class="fullsize lazyload blur-up" src="./images/news.jpg" alt=""/></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="aboutStaff pd-section">
+				<div class="container">
+					<h2 class="section__title text-uppercase fw-400 underline underline--80 underline--black">Dự án nổi bật</h2>
+					<div class="row">
+						<div class="col-sm-6 col-xl-4"><a class="projectItem" href="project-detail.html">
+								<div class="projectItem__img"><img class="lazyload blur-up" data-src="./images/news.jpg"/></div>
+								<div class="projectItem__content">
+									<h4 class="projectItem__title"></h4>
+									<p class="projectItem__description fs--16 fw-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit perspiciatis tempore sequi eligendi minus saepe quod rem! Repellat quos, neque mollitia eum nihil dolores error rem sed illo earum dignissimos!</p>
+								</div></a></div>
+						<div class="col-sm-6 col-xl-4"><a class="projectItem" href="project-detail.html">
+								<div class="projectItem__img"><img class="lazyload blur-up" data-src="./images/news.jpg"/></div>
+								<div class="projectItem__content">
+									<h4 class="projectItem__title"></h4>
+									<p class="projectItem__description fs--16 fw-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit perspiciatis tempore sequi eligendi minus saepe quod rem! Repellat quos, neque mollitia eum nihil dolores error rem sed illo earum dignissimos!</p>
+								</div></a></div>
+						<div class="col-sm-6 col-xl-4"><a class="projectItem" href="project-detail.html">
+								<div class="projectItem__img"><img class="lazyload blur-up" data-src="./images/news.jpg"/></div>
+								<div class="projectItem__content">
+									<h4 class="projectItem__title"></h4>
+									<p class="projectItem__description fs--16 fw-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit perspiciatis tempore sequi eligendi minus saepe quod rem! Repellat quos, neque mollitia eum nihil dolores error rem sed illo earum dignissimos!</p>
+								</div></a></div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer></footer>
 		<script src="./js/core.min.js"></script>

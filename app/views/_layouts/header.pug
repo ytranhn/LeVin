@@ -1,3 +1,12 @@
+.header--mobile.mobile
+	.container
+		.row.align-items-center
+			.header__logo.text-center
+				a(href='/')
+					img(src="./images/logo.svg", alt="logo")
+					h1 Le Vin Decor
+			.header__toggle
+				span.fal.fa-bars
 header.header
 	.header__logo.text-center
 		a(href='/')
@@ -6,8 +15,18 @@ header.header
 	.header__nav
 		.nav__item
 			a.nav__link(href="/") Trang chủ
-		.nav__item
-			a.nav__link(href="about-us.html") Giới thiệu
+		.nav__item.nav__item--hasSub
+			a.nav__link(href="#") 
+				span Giới thiệu
+				span.fal.fa-chevron-right
+			.nav__sub
+				.nav__item
+					a.nav__link(href="about-us.html") Giới thiệu chung
+				.nav__item
+					a.nav__link(href="about-office.html") Khối văn phòng
+				.nav__item
+					a.nav__link(href="about-factory.html") Khối nhà máy
+
 		.nav__item
 			a.nav__link(href="service.html") Dịch vụ
 		.nav__item

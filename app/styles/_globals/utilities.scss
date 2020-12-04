@@ -3,6 +3,10 @@
 	clear: both;
 	content: '';
 }
+.d-none,
+[hidden] {
+	display: none !important;
+}
 .fw-300 {
 	font-weight: 300;
 }

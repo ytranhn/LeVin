@@ -5,19 +5,27 @@
 	justify-content: center;
 	align-items: center;
 }
-
 .contact__information {
 	.information__item {
 		display: flex;
+		align-items: center;
 		&:not(:last-child) {
 			margin-bottom: 10px;
 		}
 		> span {
 			margin-top: 3px;
+			color: var(--ink-50);
+			font-size: 2rem;
 		}
 		> p {
 			margin-left: 10px;
 			font-size: 1.6rem;
+			b {
+				color: var(--ink-50);
+			}
 		}
+	}
+	@media (min-width: 768px) {
+		padding-left: 10%;
 	}
 }

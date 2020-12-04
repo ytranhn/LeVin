@@ -95,6 +95,31 @@ const initSlider = () => {
 	});
 };
 
+const HeaderNav = () => {
+	$('.nav__item--hasSub > .nav__link').on('click', function (e) {
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$(this).parents('.nav__item--hasSub').toggleClass('active');
+	});
+	$('.header--mobile .header__toggle').on('click', function (e) {
+		e.preventDefault();
+		$('.header').toggleClass('active');
+		$('.header')
+			.find('.active')
+			.each(function () {
+				$(this).removeClass('active');
+			});
+	});
+};
+
+const customFancybox = () => {
+	$('[data-fancybox]').fancybox({
+		hash: false,
+	});
+};
+
 document.addEventListener('DOMContentLoaded', () => {
 	initSlider();
+	HeaderNav();
+	customFancybox();
 });

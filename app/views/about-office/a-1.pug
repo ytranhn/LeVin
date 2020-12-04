@@ -1,0 +1,44 @@
+.aboutOffice.pb-section
+	.project__container
+		.row
+			-for(let i = 0;i<6;i++)
+				.col-sm-6.col-lg-4
+					a(href="./images/news.jpg" data-fancybox).aboutOfficeItem
+						.projectItem__img
+							img.lazyload.blur-up(data-src="./images/news.jpg")
+.aboutTitle
+	.aboutTitle__img
+		img.lazyload.blur-up(data-src="./images/about-background-1.jpg")
+	.aboutTitle__content
+		h2.section__title.text-uppercase.fw-400.underline.underline--80 Sơ đồ tổ chức
+
+.aboutStaff.pt-section
+	.container
+		h2.section__title.text-uppercase.fw-400.underline.underline--80.underline--black Ban điều hành
+		.row
+			-for(let i = 0;i<4;i++)
+				.col-sm-6.col-lg-4.col-xl-3.aboutStaff__col
+					a(href="./images/news.jpg" data-fancybox).aboutStaff
+						.aboutStaff__img
+							img.lazyload.blur-up(data-src="./images/about-staff-2.jpg")
+							.aboutStaff_title
+								h4 Your name - Kimi no nawa
+						.aboutStaff__content.text-center
+							p.fw-500 Tổng Giám Đốc
+							p.fw-500 Liên hệ: (480) 555-0103
+							p.fw-500 Email: debra.holt@example.com
+.aboutStaff.pd-section
+	.container
+		h2.section__title.text-uppercase.fw-400.underline.underline--80.underline--black Các phòng ban
+		.row
+			-for(let i = 0;i<8;i++)
+				.col-sm-6.col-lg-4.col-xl-3.aboutStaff__col
+					a(href="./images/news.jpg" data-fancybox).aboutStaff
+						.aboutStaff__img
+							img.lazyload.blur-up(data-src="./images/about-staff-2.jpg")
+							.aboutStaff_title
+								h4 Your name - Kimi no nawa
+						.aboutStaff__content.text-center
+							p.fw-500 Tổng Giám Đốc
+							p.fw-500 Liên hệ: (480) 555-0103
+							p.fw-500 Email: debra.holt@example.com

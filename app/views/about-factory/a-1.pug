@@ -1,0 +1,42 @@
+.aboutOffice.pb-section
+	.project__container
+		.row
+			-for(let i = 0;i<6;i++)
+				.col-sm-6.col-lg-4
+					a(href="./images/news.jpg" data-fancybox).aboutOfficeItem
+						.projectItem__img
+							img.lazyload.blur-up(data-src="./images/news.jpg")
+.aboutTitle
+	.aboutTitle__img
+		img.lazyload.blur-up(data-src="./images/about-background-1.jpg")
+	.aboutTitle__content
+		h2.section__title.text-uppercase.fw-400.underline.underline--80 Thiết bị máy móc
+
+.aboutStaff.pt-section
+	.container
+		h2.section__title.text-uppercase.fw-400.underline.underline--80.underline--black Các chứng chỉ máy móc
+		.row
+			-for(let i = 0;i<3;i++)
+				.col-sm-6.col-lg-4
+					a(href="./Lorem_ipsum.pdf" data-fancybox="file_device_0"+i).aboutViewPdfItem
+						.aboutViewPdfItem__img
+							img.lazyload.blur-up(data-src="./images/news.jpg")
+							.aboutViewPdfItem__viewDetail
+								span.fas.fa-file-alt
+								span Xem chi tiết
+						.aboutViewPdfItem__content
+							h4.aboutViewPdfItem__title.fw-400.text-center Máy khoang kĩ thuật QCVN 01:2008/BLĐTBXH
+.aboutStaff.pd-section
+	.container
+		h2.section__title.text-uppercase.fw-400.underline.underline--80.underline--black Các chứng nhận nhà máy
+		.row
+			-for(let i = 0;i<3;i++)
+				.col-sm-6.col-lg-4
+					a(href="./Lorem_ipsum.pdf" data-fancybox="file_certificate_0"+i).aboutViewPdfItem
+						.aboutViewPdfItem__img
+							img.lazyload.blur-up(data-src="./images/news.jpg")
+							.aboutViewPdfItem__viewDetail
+								span.fas.fa-file-alt
+								span Xem chi tiết
+						.aboutViewPdfItem__content
+							h4.aboutViewPdfItem__title.fw-400.text-center Máy khoang kĩ thuật QCVN 01:2008/BLĐTBXH
