@@ -126,11 +126,23 @@
 
 // About 3
 .aboutMissionStatement__title {
-	font-size: 7.2rem;
+	font-size: 3.6rem;
+	@media (min-width: 768px) {
+		font-size: 4.8rem;
+	}
+	@media (min-width: 1025px) {
+		font-size: 6rem;
+	}
+	@media (min-width: 1200px) {
+		font-size: 7.2rem;
+	}
 }
 .aboutMissionStatement__subTitle {
-	font-size: 2rem;
+	font-size: 1.7rem;
 	font-weight: 500;
+	@media (min-width: 1025px) {
+		font-size: 2rem;
+	}
 }
 .aboutMissionStatement__icons {
 	display: flex;
@@ -171,17 +183,28 @@
 .aboutWhyChooseUs {
 	position: relative;
 	min-height: 50vh;
-	&:before {
-		content: '';
-		width: 185px;
-		background-color: #d2c2b5;
-		left: 0;
-		top: 80px;
-		bottom: 0;
-		position: absolute;
-	}
+	display: flex;
+	align-items: center;
 	.aboutWhyChooseUs__img {
-		float: right;
+		@media (max-width: 1024.98px) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: var(--black);
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				opacity: 0.3;
+			}
+		}
+		@media (min-width: 1025px) {
+			-ms-flex: 0 0 330px;
+			flex: 0 0 330px;
+			max-width: 330px;
+		}
 	}
 	.aboutIntroduce__contentWrapper {
 		padding: 0;
@@ -189,6 +212,35 @@
 		width: 100%;
 		.section__title {
 			margin-bottom: 3rem;
+		}
+	}
+	@media (min-width: 1025px) {
+		&:before {
+			content: '';
+			width: 185px;
+			background-color: #d2c2b5;
+			left: 0;
+			top: 80px;
+			bottom: 0;
+			position: absolute;
+		}
+	}
+	@media (max-width: 1024.98px) {
+		padding-top: 0 !important;
+		.aboutIntroduce__content {
+			position: relative;
+			z-index: 5;
+		}
+		.aboutIntroduce__contentWrapper {
+			.section__title {
+				&:before {
+					background-color: var(--white);
+				}
+			}
+			h2,
+			p {
+				color: var(--white);
+			}
 		}
 	}
 }
