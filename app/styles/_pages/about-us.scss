@@ -68,6 +68,7 @@
 	width: 100%;
 	position: relative;
 	z-index: 5;
+	margin-left: 75px;
 	.section__title {
 		margin-bottom: 2rem;
 	}
@@ -80,6 +81,7 @@
 	}
 	@media (max-width: 1199.98px) {
 		padding: 25px;
+		margin-left: 0;
 	}
 	@media (max-width: 1024.98px) {
 		padding: 20px;
@@ -171,7 +173,7 @@
 	@media (max-width: 767.98px) {
 		padding-top: 5rem;
 		padding-bottom: 5rem;
-		.aboutIntroduce__contentWrapper{
+		.aboutIntroduce__contentWrapper {
 			padding: 15px;
 		}
 		.aboutIntroduce__content {
@@ -337,12 +339,43 @@
 	flex: 0 0 40%;
 	max-width: 40%;
 	padding: 0 15px;
+	@media (max-width: 1024.98px) {
+		display: none;
+		order: 1;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		text-align: center;
+		img {
+			max-width: 300px;
+		}
+	}
 }
 .aboutCustomer__slider {
 	-ms-flex: 0 0 60%;
 	flex: 0 0 60%;
 	max-width: 60%;
 	padding: 0 15px;
+	position: relative;
+	.swiper-pagination-bullets.swiper-pagination--custom {
+		position: static;
+		margin-top: 3rem;
+	}
+	@media (max-width: 1024.98px) {
+		order: 2;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+.aboutCustomerItem {
+	position: relative;
+	padding-left: 50px;
+	padding-top: 50px;
+	@media (max-width: 767.98px) {
+		padding-left: 0;
+		padding-top: 0;
+	}
 }
 .aboutCustomerItem__img {
 	width: 150px;
@@ -351,18 +384,60 @@
 	overflow: hidden;
 }
 .aboutCustomerItem__avatarWrapper {
-	position: relative;
 	width: 150px;
 	height: 150px;
+	z-index: 5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	@media (max-width: 767.98px) {
+		height: unset;
+		position: static;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 .aboutCustomerItem__title {
 	white-space: nowrap;
-	position: absolute;
-	left: 100%;
-	top: 0;
-	padding-top: 10px;
-	padding-left: 10px;
 	color: var(--ink-50);
 	font-weight: 400;
 	font-size: 2rem;
+	padding: 2rem 0;
+	@media (min-width: 768px) {
+		position: absolute;
+		left: 100%;
+		top: 0;
+		padding: 0;
+		padding-top: 10px;
+		padding-left: 10px;
+	}
+}
+.aboutCustomerItem__content {
+	background-color: #efeded;
+	position: relative;
+	padding: 25px 25px 25px 165px;
+	border-radius: 25px;
+	p {
+		font-size: 1.6rem;
+		font-weight: 300;
+		color: var(--ink-50);
+	}
+	&:before {
+		content: '';
+		background-image: url('../images/quote.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 125px;
+		top: 15px;
+	}
+	@media (max-width: 767.98px) {
+		padding: 20px 20px 20px 60px;
+		&:before {
+			left: 20px;
+			top: 15px;
+		}
+	}
 }

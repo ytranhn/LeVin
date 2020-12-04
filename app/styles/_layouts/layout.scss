@@ -11,11 +11,16 @@
 
 body {
 	@media (min-width: 1025px) {
-		padding-left: 220px;
+		padding-left: 270px;
 	}
 }
 p {
 	color: var(--ink-70);
+}
+main {
+	@media (max-width: 1024.98px) {
+		padding-top: 61px;
+	}
 }
 .swiper-pagination-bullets {
 	&.swiper-pagination--custom {

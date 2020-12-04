@@ -7,12 +7,15 @@
 			.aboutCustomer__slider
 				.swiper-container
 					.swiper-wrapper
-						.swiper-slide
-							.aboutCustomerItem__avatarWrapper
-								.aboutCustomerItem__img
-									img.object-cover(src="./images/testimonial-1.jpg")
-								h4.aboutCustomerItem__title Bessie Cooper 
-							.aboutCustomerItem__content
-								p Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit.
+						-for(let i = 0;i<5;i++)
+							.swiper-slide
+								.aboutCustomerItem.fullsize
+									.aboutCustomerItem__avatarWrapper
+										.aboutCustomerItem__img
+											img.object-cover(src="./images/testimonial-1.jpg")
+										h4.aboutCustomerItem__title Bessie Cooper + #{i}
+									.aboutCustomerItem__content
+										p Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit.
+					.swiper-pagination.swiper-pagination--custom
 			.aboutCustomer__img
 				img.lazyload.blur-up(data-src="./images/about-5.jpg")

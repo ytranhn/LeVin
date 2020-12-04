@@ -93,17 +93,49 @@ const initSlider = () => {
 			},
 		},
 	});
+
+	const aboutCustomer = new Swiper(
+		'.aboutCustomer__slider .swiper-container',
+		{
+			slidesPerView: 1,
+			speed: 800,
+			loop: true,
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true,
+			},
+			autoplay: {
+				disableOnInteraction: false,
+				delay: 3400,
+			},
+			pagination: {
+				el: '.aboutCustomer__slider .swiper-pagination',
+				clickable: true,
+			},
+		},
+	);
 };
 
 const HeaderNav = () => {
 	$('.nav__item--hasSub > .nav__link').on('click', function (e) {
 		e.preventDefault();
-		$(this).toggleClass('active');
-		$(this).parents('.nav__item--hasSub').toggleClass('active');
+		if (window.innerWidth <= 1024) {
+			$(this).toggleClass('active');
+			$(this).parents('.nav__item--hasSub').toggleClass('active');
+		}
 	});
 	$('.header--mobile .header__toggle').on('click', function (e) {
 		e.preventDefault();
 		$('.header').toggleClass('active');
+		$('.header')
+			.find('.active')
+			.each(function () {
+				$(this).removeClass('active');
+			});
+	});
+	$('.nav__item--hasSub .nav__back').on('click', function (e) {
+		e.preventDefault();
+		$('this').parents('active');
 		$('.header')
 			.find('.active')
 			.each(function () {

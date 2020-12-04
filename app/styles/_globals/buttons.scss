@@ -73,6 +73,12 @@
 .btn--viewDetail--outline {
 	border: 1px solid var(--white);
 	color: var(--white);
+	@media (min-width: 1025px) {
+		&:hover {
+			background-color: var(--white);
+			color: var(--ink-70);
+		}
+	}
 }
 
 .btn-transparent {
