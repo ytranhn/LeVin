@@ -92,7 +92,14 @@
 		font-size: 13px;
 		color: var(--ink-50);
 		text-decoration: none;
-		text-transform: uppercase;
+		text-transform: normal;
+		&:hover,
+			&.active {
+				color: var(--main);
+			}
+		&.active{
+			font-weight: 900;
+		}
 	}
 	.social__item {
 		font-size: 14px;

@@ -19,11 +19,11 @@
 		max-width: 1150px;
 	}
 	@media (min-width: 1440px) {
-		max-width: 1390px;
+		max-width: 1280px;
 	}
-	@media (min-width: 1660px) {
-		max-width: 1460px;
-	}
+	// @media (min-width: 1660px) {
+	// 	max-width: 1280px;
+	// }
 }
 .row {
 	display: flex;

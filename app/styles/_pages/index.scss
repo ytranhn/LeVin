@@ -101,10 +101,18 @@
 }
 .indexIntroduce__title {
 	margin-top: 4rem;
+	@media (max-width: 1025px) {
+		margin-top: 2rem;
+		text-align: center;
+	}
 }
 .indexIntroduce__description {
 	margin-top: 4rem;
 	color: var(--ink-70);
+	@media (max-width: 1025px) {
+		margin-top: 2rem;
+		text-align: justify;
+	}
 }
 .indexIntroduce__img {
 	@include img(1);
@@ -216,6 +224,9 @@
 		transform: translateY(-50%);
 		z-index: 5;
 		box-shadow: var(--shadow-2);
+	}
+	@media (max-width: 1025px) {
+		text-align: justify;
 	}
 }
 .indexVideo__description {
@@ -347,6 +358,12 @@
 			display: flex;
 			justify-content: center;
 			margin-top: 2rem;
+			.swiper-pagination-bullet{
+				@media (max-width: 1025px) {
+					width: .8rem;
+    				height: .8rem;
+				}
+			}
 		}
 	}
 	.swiper-slide {
@@ -375,4 +392,7 @@
 .indexCustomer__subTitle {
 	font-size: 2.8rem;
 	font-weight: 700;
+	@media (max-width: 1025px) {
+		text-align: center;
+	}
 }
